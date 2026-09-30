@@ -4,33 +4,27 @@ int main(){
 int t;
 cin>>t;
 
+
 while(t--){
+string s;
+cin>>s;
+int len = s.size();
+char a,b;
 
-   char s[101];
-    cin>>s;
-
-    int len = strlen(s);
-
-
-if(len>10){
-//len = len -2;
-char first[3] ;
-   
- first[0] = s[0];
-cout<<first[0];
-first[2] = s[len-1];
-cout<<len-2<<first[2];
-    
+if(len<=10){
+    cout<<s<<endl;
 }
-else{
-    for(int i = 0;i<len;i++){
-        cout<<s[i];
-    }
+else if(len>10){
+     a = s.front();
+     b = s.back(); 
+     cout<<a<<len-2<<b<<endl;
 }
-cout<<endl;
 
 }
- 
+
+
+
+
 
 
 
