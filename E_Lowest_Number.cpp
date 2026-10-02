@@ -24,3 +24,43 @@ for( int i = 1;i<n;i++){
 
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+// Maximum Number 
+
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+int n;
+cin>>n;
+int a[n];
+for(int i = 0;i<n;i++){
+    cin>>a[i];
+}
+//int low = a[0],idx=0;
+int max = a[0],idx = 0;
+for( int i = 1;i<n;i++){
+    if(a[i]>max){
+        max = a[i];
+        idx = i;
+       
+    }
+
+}
+
+   cout<<max<<" "<<idx<<endl;
+
+
+
+
+    return 0;
+}
