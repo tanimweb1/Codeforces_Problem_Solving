@@ -36,3 +36,39 @@ cout<<"YES"<<endl;
 
     return 0;
 }
+
+
+
+
+
+
+
+
+
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+char s[1001];
+cin>>s;
+
+int len = strlen(s);
+int palin=0;
+for(int i = 0,j=len-1;i<j;i++,j--){
+if(s[i] != s[j]){
+palin=1;
+cout<<"NO"<<endl;
+break;
+}
+
+}
+
+if(palin==0){
+    cout<<"YES"<<endl;
+}
+
+
+
+
+
+    return 0;
+}
