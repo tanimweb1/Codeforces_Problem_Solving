@@ -13,21 +13,44 @@ cin>>a>>c>>b;
    else if(c=='<'&&a<b ){
         cout<<"Right"<<endl;
     }
+
+    else if(c=='=' &&a==b){
+    cout<<"Right"<<endl;
+}
     else{
         cout<<"Wrong"<<endl;
     }
 }
 ///A- minus hole 
- if(a<0){
+ else if(a<0){
     if(c=='<'&&a<b ){
         cout<<"Right"<<endl;
     }
+else if(c=='=' &&a==b){
+    cout<<"Right"<<endl;
+}
+
     else{
         cout<<"Wrong"<<endl;
     }
 }
 
 ///B Minus hole 
+
+else  if(b<0){
+    if(c=='>'&&a>b ){
+        cout<<"Right"<<endl;
+    }
+
+    else if(c=='=' &&a==b){
+    cout<<"Right"<<endl;
+}
+
+    else{
+        cout<<"Wrong"<<endl;
+    }
+}
+
 
 
 
