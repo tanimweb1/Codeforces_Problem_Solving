@@ -8,7 +8,7 @@ cin>>a>>s>>b>>q>>c;
 int ans1 = a+b;
 int ans2= a-b;
 int ans3= a*b;
-if(a+b==c&&s=='+' && q=='='){
+if(a+b==c&&s=='+'){
     cout<<"Yes"<<endl;
 }
 else if(s=='-'&& a-b==c){
