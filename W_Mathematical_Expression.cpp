@@ -2,16 +2,16 @@
 using namespace std;
 int main(){
 int a,b,c;
-char s,q='=';
+char s,q;
 
-cin>>a>>s>>b>>c;
+cin>>a>>s>>b>>q>>c;
 int ans1 = a+b;
 int ans2= a-b;
 int ans3= a*b;
-if(a+b==c&&s=='+'&&q=='=' ){
+if(a+b==c&&s=='+' && q=='='){
     cout<<"Yes"<<endl;
 }
-else if(s=='-'&& a+b==c){
+else if(s=='-'&& a-b==c){
     cout<<"Yes"<<endl;
 }
 else if(s=='*'&& a*b==c){
